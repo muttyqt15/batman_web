@@ -1,32 +1,30 @@
-import batman from '../assets/batman.png';
+import batman_img from '../assets/batman_img.png'
+import gothamCity from '../assets/gothamCity.webp'
+import speechBubble from '../assets/speechbubble.png'
 import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 border-b-2 bg-slate-950 border-gray-600 ring-gray-600 ring-b-2 min-w-full h-20 flex items-center">
-        <div className="flex justify-between w-full p-5">
-          <a href="/" className="flex items-center">
-            <Image 
-              src={batman}
-              className="h-12 w-12"
-            />
-          </a>
-          <div className="flex items-center gap-4 ml-8">
-            <h1>Shop</h1>
-            <h1 className="hidden md:flex">Home</h1>
-            <h1 className="">About</h1>
-          </div>
-          <button className="flex items-center border-2 border-yellow-500 px-6 rounded-2xl">
-              Login
-          </button>
+      <div className="flex justify-center min-h-screen">
+        <div className="xl:items-center">
+          <h1 className="mt-32 p-5 text-6xl">Behind the mask</h1>  
+          <h2 className="ml-16 text-8xl">Who is he?</h2>
         </div>
-      </nav>
+      </div>
       
       <div className="flex items-center justify-center">
-        <div className="flex flex-col mt-32 w-10/12 min-h-screen gap-4">
-          <div className="relative text-center xl:text-left xl:ml-44">
-            test
+        <div className="flex lg:flex-row-reverse mt-32 w-10/12 min-h-screen md:gap-8 mb-32 text-center">
+          <div className="mr-16 relative items-center text-center text-4xl xl:text-left xl:px-32 md:text-6xl justify-center">
+            <button className="hover:text-slate-700 text-4xl ">The vigilante.</button><br/><br/>
+            <button className="hover:text-slate-700 text-6xl">The anti-hero.</button><br/><br/>
+            <button className="hover:text-slate-700 text-8xl">THE MAN.</button>
+          </div>
+          <div className="flex justify-center lg:w-full">
+            <Image 
+            src={batman_img}
+            className='flex items-center mt-8 h-72 w-96 md:w-auto md:h-96 xl:' 
+            />
           </div>
         </div>
       </div>

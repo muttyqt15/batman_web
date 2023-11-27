@@ -1,5 +1,6 @@
 
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,12 +19,23 @@
   }
 }
 
+#footer {
+  color:rebeccapurple;
+  font-size: xx-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    rgba(0, 0, 50, 1), /* Dark Blue */
+    rgba(0, 0, 25, 1) 25%, /* Slightly lighter blue */
+    rgba(0, 0, 10, 1) 50%, /* Darker blue */
+    rgba(0, 0, 5, 1) 75%, /* Very dark blue */
+    rgba(0, 0, 0, 1) /* Full Black */
+  );
 }
+
+
+
